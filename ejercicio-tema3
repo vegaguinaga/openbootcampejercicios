@@ -1,0 +1,27 @@
+public class Main {
+    public static void main(String[] args) {
+        int resultado;
+        resultado = sumar(25,3,96);
+
+        System.out.println("La suma es: " + resultado);
+
+        // Invocar clase coche
+        Coche miCoche = new Coche();
+        miCoche.IncrementarPuertas();
+        System.out.println("Mi coche tiene  " + miCoche.puertas + " puertas.");
+
+    }
+
+    public static int sumar(int num1, int num2,int num3){
+        int suma = num1+num2+num3;
+        return suma;
+    }
+
+}
+class Coche{
+    public int puertas = 4;
+
+    public void IncrementarPuertas(){
+        this.puertas++;
+    }
+}
